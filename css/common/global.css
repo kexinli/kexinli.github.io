@@ -1,0 +1,97 @@
+#gBgPackage{
+	min-height:100%;
+	background:url( '../../images/common/hd_bg.jpg' ) 0 0 repeat;
+}
+#gBorderPackage{
+	border-top:10px solid #5ead64;
+}
+#gHd{
+	width:664px;
+	margin:0 auto;
+	position:relative;
+}
+#gLogoBox{
+	display:block;
+	width:262px;
+	height:81px;
+	margin:0 auto 4px;
+	padding-top:110px;
+}
+#gContractBox{
+	position:absolute;
+	right:0;
+	top:25px;
+	font-family:Roboto-Light;
+	color:#676767;
+}
+#gContractMe{
+	display:inline-block;
+	width:24px;
+	height:24px;
+	vertical-align:middle;
+	background:url( '../../images/common/mail_bg.png' ) no-repeat;
+}
+#gContractMe:hover{
+	background:url( '../../images/common/mail_bg_hover.png' ) no-repeat;
+}
+#gNav{
+	margin:50px 0;
+	text-align:center;
+}
+#gNav a{
+	margin:0 38px;
+	color:#aaa;
+	text-decoration:none;
+}
+#gNav .g_cur{
+	color:#585858;
+	border-bottom:1px solid #ccc;
+}
+#gNav a:hover{
+	color:#585858;
+	border-bottom:1px solid #ccc;
+}
+#gFt{
+	text-align:center;
+	color:#bcbcbc;
+	padding-bottom:30px;
+}
+.g_clearfix:after{
+	content:'\20';
+	display:block;
+	width:0;
+	height:0;
+	clear:both;
+}
+.chinese_font{
+	font-family:'Microsoft YaHei', 'SimSun';
+}
+/* for IE */
+html,body{
+	scrollbar-face-color:#6e6e6e;
+	scrollbar-highlight-color:#353535;
+	scrollbar-3dlight-color:#353535;
+	scrollbar-darkshadow-color:#353535;
+	scrollbar-shadow-color:#353535;
+	scrollbar-arrow-color:#000;
+	scroll-track-color:#353535;
+}
+/* for chrome*/
+::-webkit-scrollbar{
+	width:15px;
+	height:15px;
+	cursor:move;
+}
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment{
+	height:1px;
+	display:block;
+}
+::-webkit-scrollbar-track-piece{
+	background-color:#353535;
+	cursor:move;
+}
+::-webkit-scrollbar-thumb:vertical{
+	border:1px solid #aaa;
+	-webkit-border-radius:6px;
+}

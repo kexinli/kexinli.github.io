@@ -1,0 +1,57 @@
+---
+---
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+	{% if page.title %}
+	{{page.title}}
+	{% else %}
+	{{site.title}}
+	{% endif %}
+	</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link href="css/common/reset.css" rel="stylesheet" type="text/css" />
+	<link href="css/common/global.css" rel="stylesheet" type="text/css" />
+	<!--<link href="css/index.css" rel="stylesheet" type="text/css" />-->
+	<link href="{{page.css}}" rel="stylesheet" type="text/css" />
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="js/lib/html5.js"></script>	
+		<link href="css/compatible/compatibleIE.css" type="text/css" rel="stylesheet" />
+	<![endif]-->
+	<!--[if IE 6]>
+		<script type="text/javascript" src="js/lib/DD_belatedPNG.js"></script>
+		<script type="text/javascript">
+			(function(){
+				DD_belatedPNG.fix( '#logoImg,#meImg' );
+				DD_belatedPNG.fix( '#gContractMe,background' );
+			})();
+		</script>
+	<![endif]-->
+</head>
+<body>
+<div id="gBgPackage">
+	<div id="gBorderPackage">
+		<header id="gHd">
+			<a href="#" id="gLogoBox"><img src="images/common/logo.png" alt="Kexin Li" id="logoImg"/></a>
+			<nav id="gNav">
+				{% if page.name == "portfolio"%}
+					<a href="/" hidefocus="true">HOME</a><a href="portfolio.html" class="g_cur" hidefocus="true">PORTFOLIO</a>
+				{% else %}
+					<a href="/" class="g_cur" hidefocus="true">HOME</a><a href="portfolio.html" hidefocus="true">PORTFOLIO</a>
+				{% endif %}
+					<a href="{{site.cv | prepend: site.baseurl}}" target="_blank" hidefocus="true">RESUME</a>
+			</nav>
+			<div id="gContractBox">Contact&nbsp;via&nbsp;&nbsp;<a href="mailto:{{site.email}}" target="_blank" id="gContractMe" hidefocus="true" title=“{{site.email}}"></a></div>
+		</header>
+
+		{{ content }}
+		
+		<footer id="gFt">
+			Copyright &copy; {{ site.time | date: '%Y' }} {{site.title}}
+		</footer>
+	</div>
+</div>
+</body>
+</html>

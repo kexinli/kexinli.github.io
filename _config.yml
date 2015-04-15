@@ -1,0 +1,11 @@
+# Site settings
+title: Kexin Li
+email: kexin.li@ucl.ac.uk
+cv: Kexin_LI_CV.pdf
+description: 
+baseurl: "" 
+url: "http://kexinli.com" 
+github_username:  kexinli
+
+# Build settings
+markdown: kramdown

@@ -1,0 +1,15 @@
+/* for IE6,7,8 to support new html5 elements */
+article,aside,figure,figcaption,footer,header,nav,section{
+	display:block;
+}
+mark,progress,ruby,rt,rp,time{
+	display:inline-block;
+}
+.g_clearfix{
+	zoom:1;
+}
+.each_work .shade{
+}
+#gBgPackage{
+	height:100%;
+}

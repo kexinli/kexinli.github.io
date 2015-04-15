@@ -24,11 +24,11 @@ a{
   font-family: 'Asap';
   font-style: normal;
   font-weight: 400;
-  src: local('Asap'), local('Asap-Regular'), url(../../font/Asap_regular.woff) format('woff');
+  src: local('Asap'), local('Asap-Regular'), url(/font/Asap_regular.woff) format('woff');
 }
 @font-face{
 	font-family:'Roboto-Black';
 	font-style:normal;
 	font-weight:400;
-	src: local( 'Roboto' ), local( 'Roboto-black
+	src: local( 'Roboto' ), local( 'Roboto-Black'), url(/font/Roboto-Black.woff) format('woff');
 }

@@ -6,6 +6,8 @@ description:
 baseurl: "" 
 url: "http://kexinli.com" 
 github_username:  kexinli
+# whether to enable google resource  
+google: true
 
 # Build settings
 markdown: kramdown
